@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EFE</string>
+    <string name="title_activity_main">Title</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="contribute_dialog">Đóng góp cho cộng đồng</string>
+    <string name="tieng_viet">Tiếng Việt :</string>
+    <string name="tieng_anh">Tiếng Anh :</string>
+    <string name="note_contribute">Chú thích (nếu có):</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">1</string>
+    <string name="title_notifications">2</string>
+</resources>
