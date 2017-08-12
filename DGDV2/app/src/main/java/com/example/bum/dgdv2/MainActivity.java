@@ -3,43 +3,68 @@ package com.example.bum.dgdv2;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+
 import android.view.MenuItem;
+
+
 import android.widget.TextView;
+
+import com.example.bum.dgdv2.fragment.chat.FragmentChat;
+import com.example.bum.dgdv2.fragment.home.FragmentHome;
+import com.example.bum.dgdv2.fragment.list.FragmentMyList;
+import com.example.bum.dgdv2.fragment.notification.FragmentNotification;
+import com.example.bum.dgdv2.fragment.setting.FragmentSetting;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
-            }
-            return false;
-        }
 
-    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mTextMessage = (TextView) findViewById(R.id.message);
+        initViews();
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment selectedFragment = null;
+                switch (item.getItemId()) {
+                    case R.id.tab_home:
+                        selectedFragment= FragmentHome.newInstance();
+                        break;
+                    case R.id.tab_list:
+                        selectedFragment=FragmentMyList.newInstance();
+                        break;
+                    case R.id.tab_notifition:
+                        selectedFragment=FragmentNotification.newInstance();
+                        break;
+                    case R.id.tab_setting:
+                        selectedFragment=FragmentSetting.newInstance();
+                        break;
+                    case R.id.tab_chat:
+                        selectedFragment= FragmentChat.newInstance();
+
+                }
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frame_layout, selectedFragment);
+                transaction.commit();
+                return true;
+            }
+        });
+
+    }
+
+    private void initViews() {
+
     }
 
 }

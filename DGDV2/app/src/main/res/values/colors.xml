@@ -19,5 +19,6 @@
     <color name="color_a2">#B2FF59</color>
     <color name="color_a3">#76FF03</color>
     <color name="color_a4">#64DD17</color>
+    <color name="grey">#EFEFEF</color>
 
 </resources>

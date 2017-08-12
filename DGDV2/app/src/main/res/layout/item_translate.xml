@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.example.bum.dgd.fonts.CustomEdittex
+    <com.example.bum.dgdv2.fonts.CustomEdittex
         android:layout_width="match_parent"
         android:textSize="@dimen/text_size_22"
         android:id="@+id/edt_translate"

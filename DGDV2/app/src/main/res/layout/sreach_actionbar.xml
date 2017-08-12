@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <FrameLayout
+      android:layout_toLeftOf="@+id/im_hoi"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <com.example.bum.dgdv2.fonts.CustomEdittex
+          android:id="@+id/edt_search"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dimen_4.5x"
+          android:layout_centerVertical="true"
+          android:layout_gravity="center"
+          android:layout_marginBottom="@dimen/dimen_0.5x"
+          android:layout_marginLeft="@dimen/dimen_0.5x"
+          android:layout_marginRight="@dimen/dimen_0.5x"
+          android:layout_marginTop="@dimen/dimen_0.5x"
+          android:background="@drawable/bg_translate_box"
+          android:hint="@string/Dictionary"
+          android:imeOptions="actionSearch"
+          android:maxLines="1"
+          android:paddingBottom="@dimen/dimen_0.5x"
+          android:paddingLeft="@dimen/dimen_0.8x"
+          android:paddingRight="@dimen/dimen_0.8x"
+          android:paddingTop="@dimen/dimen_0.5x"
+          android:singleLine="true"
+          android:textSize="@dimen/text_size_14"
+          app:typeface="italic"/>
+
+  </FrameLayout>
+    <ImageView
+        android:id="@+id/im_hoi"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dimen_0.5x"
+        android:src="@drawable/ic_translate"
+        android:layout_marginTop="@dimen/dimen_0.5x"
+        android:layout_width="@dimen/dimen_4.5x"
+        android:layout_marginBottom="@dimen/dimen_0.5x"
+        android:layout_height="@dimen/dimen_4.5x"
+         />
+
+
+</RelativeLayout>

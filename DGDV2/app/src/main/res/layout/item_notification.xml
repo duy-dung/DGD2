@@ -26,7 +26,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <com.example.bum.dgd.fonts.CustomTextView
+            <com.example.bum.dgdv2.fonts.CustomTextView
                 android:id="@+id/tv_res_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
                 android:textSize="@dimen/text_size_14"
                 app:typeface="bold" />
 
-            <com.example.bum.dgd.fonts.CustomTextView
+            <com.example.bum.dgdv2.fonts.CustomTextView
                 android:id="@+id/tv_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                 android:maxLines="2"
                 android:text="‘Hello' everybody" />
 
-            <com.example.bum.dgd.fonts.CustomTextView
+            <com.example.bum.dgdv2.fonts.CustomTextView
                 android:id="@+id/tv_date_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

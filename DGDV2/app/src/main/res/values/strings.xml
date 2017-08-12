@@ -10,4 +10,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">1</string>
     <string name="title_notifications">2</string>
+    <string name="my_list">My list</string>
+    <string name="notification">Notification</string>
+    <string name="settings">Setting</string>
+    <string name="chat">Chat</string>
+    <string name="Dictionary">Dictionary</string>
 </resources>

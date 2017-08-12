@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.example.bum.dgd.fonts.CustomTextView
+    <com.example.bum.dgdv2.fonts.CustomTextView
         android:layout_width="match_parent"
         android:text="@string/contribute_dialog"
         android:gravity="center"
@@ -14,7 +14,7 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.example.bum.dgd.fonts.CustomEdittex
+        <com.example.bum.dgdv2.fonts.CustomEdittex
             android:hint="@string/tieng_viet"
             style="@style/edt_contribute"/>
     </android.support.design.widget.TextInputLayout>
@@ -22,14 +22,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.example.bum.dgd.fonts.CustomEdittex
+        <com.example.bum.dgdv2.fonts.CustomEdittex
             android:hint="@string/tieng_anh"
             style="@style/edt_contribute" />
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.example.bum.dgd.fonts.CustomEdittex
+        <com.example.bum.dgdv2.fonts.CustomEdittex
             android:hint="@string/note_contribute"
             style="@style/edt_contribute"/>
     </android.support.design.widget.TextInputLayout>
@@ -41,7 +41,7 @@
         android:padding="@dimen/dimen_1.0x"
         android:weightSum="2">
 
-        <com.example.bum.dgd.fonts.CustomTextView
+        <com.example.bum.dgdv2.fonts.CustomTextView
             android:id="@+id/tv_contribute_ok"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -55,7 +55,7 @@
             android:textSize="@dimen/text_size_18"
             app:typeface="bold" />
 
-        <com.example.bum.dgd.fonts.CustomTextView
+        <com.example.bum.dgdv2.fonts.CustomTextView
             android:id="@+id/tv_contribute_cancel"
             android:layout_width="0dp"
             android:layout_height="match_parent"

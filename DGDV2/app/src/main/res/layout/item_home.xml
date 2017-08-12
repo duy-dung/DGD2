@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_7.5x"
+        android:background="@color/color_2">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_6.0x"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_0.5x">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bd_image"
+                android:src="@drawable/__picker_ic_camera_p"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.example.bum.dgdv2.fonts.CustomTextView
+                    android:id="@+id/tv_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_0.3x"
+                    android:layout_marginLeft="@dimen/dimen_0.5x"
+                    android:layout_marginTop="@dimen/dimen_0.5x"
+                    android:text="word"
+                    android:textSize="@dimen/text_size_20"
+                    app:typeface="bold" />
+                <com.example.bum.dgdv2.fonts.CustomTextView
+                    android:id="@+id/tv_name_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginBottom="@dimen/dimen_0.3x"
+                    android:layout_marginLeft="@dimen/dimen_1.5x"
+                    android:layout_marginTop="@dimen/dimen_0.5x"
+                    android:text="name-user"
+                    android:textSize="@dimen/text_size_20"
+                    app:typeface="bold" />
+
+            </LinearLayout>
+
+
+            <com.example.bum.dgdv2.fonts.CustomTextView
+                android:id="@+id/tv_description_word"
+                android:layout_marginLeft="@dimen/dimen_0.5x"
+                android:layout_marginRight="@dimen/dimen_0.5x"
+                android:textSize="@dimen/text_size_15"
+                android:text="tv_description_word"
+                app:typeface="italic"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_0.5x"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="@dimen/dimen_0.4x"
+                    android:src="@drawable/ic_like"
+                    android:layout_width="@dimen/dimen_2.5x"
+                    android:layout_height="@dimen/dimen_2.5x" />
+                <com.example.bum.dgdv2.fonts.CustomEdittex
+                    android:id="@+id/tv_sum_like"
+                    android:layout_gravity="center"
+                    app:typeface="bold"
+                    android:textSize="@dimen/text_size_17"
+                    android:text="1"
+                    android:layout_marginLeft="@dimen/dimen_0.5x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:padding="@dimen/dimen_0.4x"
+                    android:layout_marginLeft="@dimen/dimen_3.0x"
+                    android:src="@drawable/ic_dislike"
+                    android:layout_width="@dimen/dimen_2.5x"
+                    android:layout_height="@dimen/dimen_2.5x" />
+                <com.example.bum.dgdv2.fonts.CustomEdittex
+                    android:id="@+id/tv_sum_disslike"
+                    android:layout_gravity="center"
+                    app:typeface="bold"
+                    android:textSize="@dimen/text_size_17"
+                    android:text="1"
+                    android:layout_marginLeft="@dimen/dimen_0.5x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

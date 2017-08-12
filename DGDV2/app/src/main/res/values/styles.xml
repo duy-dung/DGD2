@@ -19,5 +19,4 @@
         <item name="android:layout_marginTop">@dimen/dimen_1.0x</item>
         <!--<item name="android:textColorHint">@color/color_4</item>-->
     </style>
-
 </resources>
