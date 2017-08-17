@@ -36,11 +36,15 @@
                 android:layout_marginLeft="@dimen/dimen_0.5x"
                 android:textSize="@dimen/text_size_22"
                 android:text="word"
+                android:maxLines="1"
+                android:ellipsize="end"
                 app:typeface="bold"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent" />
             <com.example.bum.dgdv2.fonts.CustomTextView
                 android:id="@+id/tv_description_word"
+                android:maxLines="1"
+                android:ellipsize="end"
                 android:layout_marginLeft="@dimen/dimen_0.5x"
                 android:layout_marginRight="@dimen/dimen_0.5x"
                 android:textSize="@dimen/text_size_17"

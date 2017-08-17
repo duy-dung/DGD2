@@ -20,12 +20,7 @@ import com.example.bum.dgdv2.fragment.setting.FragmentSetting;
 
 
 public class MainActivity extends AppCompatActivity {
-
     private TextView mTextMessage;
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
