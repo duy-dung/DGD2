@@ -1,5 +1,6 @@
 package com.example.bum.dgdv2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -17,6 +18,7 @@ import com.example.bum.dgdv2.fragment.home.FragmentHome;
 import com.example.bum.dgdv2.fragment.list.FragmentMyList;
 import com.example.bum.dgdv2.fragment.notification.FragmentNotification;
 import com.example.bum.dgdv2.fragment.setting.FragmentSetting;
+import com.example.bum.dgdv2.lockscreen.LockScreenActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.tab_chat:
                         selectedFragment= FragmentChat.newInstance();
-
+                        break;
                 }
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frame_layout, selectedFragment);
@@ -55,11 +57,15 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+        navigation.setSelectedItemId(R.id.tab_home);
+        //defauld fragment
+
 
     }
 
     private void initViews() {
 
     }
+
 
 }

@@ -21,7 +21,7 @@ public abstract class BaseFragment extends Fragment {
     protected abstract void initView();
     protected void onScreenLoadData() {
     }
-
+    protected abstract void  initViewMain();
     private View mView;
     private Unbinder mUnbinder;
     @Nullable
@@ -33,6 +33,12 @@ public abstract class BaseFragment extends Fragment {
         mUnbinder = ButterKnife.bind(this, mView);
         initView();
         return mView;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        initViewMain();
     }
 
     @Override

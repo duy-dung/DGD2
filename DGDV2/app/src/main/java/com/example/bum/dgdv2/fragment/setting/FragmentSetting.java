@@ -24,5 +24,10 @@ public class FragmentSetting extends BaseFragment {
 
     }
 
+    @Override
+    protected void initViewMain() {
+
+    }
+
 
 }

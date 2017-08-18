@@ -8,6 +8,7 @@ import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.SparseArray;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.bum.dgdv2.R;
@@ -17,7 +18,7 @@ import com.example.bum.dgdv2.R;
  * Created by Bum on 17-Jul-17.
  */
 
-public class CustomEdittex extends TextView {
+public class CustomEdittex extends EditText {
     private static final int REGULAR=0;
     private static final int BOLD=1;
     private static final int ITALIC=2;
@@ -30,8 +31,6 @@ public class CustomEdittex extends TextView {
         parseAttributes(context,null);
     }
 
-
-
     public CustomEdittex(Context context, AttributeSet attrs) {
         super(context, attrs);
         parseAttributes(context,attrs);
@@ -42,7 +41,7 @@ public class CustomEdittex extends TextView {
         parseAttributes(context,attrs);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public CustomEdittex(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public CustomEdittex(Context context,AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         parseAttributes(context,attrs);
     }

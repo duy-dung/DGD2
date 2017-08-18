@@ -20,19 +20,20 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
-
-        </activity>
-        <activity
-
-            android:theme="@style/Theme.AppCompat.Dialog"
-            android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lockscreen.LockScreenActivity" />
+        <activity
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:name=".StartActivity">
+
+        </activity>
+        <activity android:name=".lockscreen.LockScreenActivity" >
+
+        </activity>
     </application>
 
 </manifest>

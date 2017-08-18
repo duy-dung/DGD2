@@ -22,4 +22,9 @@ public class FragmentMyList extends BaseFragment {
     protected void initView() {
 
     }
+
+    @Override
+    protected void initViewMain() {
+
+    }
 }

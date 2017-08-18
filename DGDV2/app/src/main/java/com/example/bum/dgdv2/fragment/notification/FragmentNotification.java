@@ -23,4 +23,9 @@ public class FragmentNotification extends BaseFragment {
     protected void initView() {
 
     }
+
+    @Override
+    protected void initViewMain() {
+
+    }
 }

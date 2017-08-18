@@ -14,6 +14,6 @@
         <enum name="regular" value="0" />
         <enum name="bold" value="1" />
         <enum name="italic" value="2" />
-        <enum name="bold_italic" value="2" />
+        <enum name="bold_italic" value="3" />
     </attr>
 </resources>

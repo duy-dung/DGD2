@@ -7,13 +7,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.bum.dgdv2.MainActivity">
-    <include layout="@layout/sreach_actionbar"/>
+
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/navigation"
-        android:animateLayoutChanges="true">
+        android:animateLayoutChanges="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
     </FrameLayout>
 
@@ -23,6 +25,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
+        android:background="@color/color_8"
         />
 </RelativeLayout>

@@ -23,4 +23,9 @@ public class FragmentChat extends BaseFragment {
 
     }
 
+    @Override
+    protected void initViewMain() {
+
+    }
+
 }
